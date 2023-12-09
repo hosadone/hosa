@@ -1,0 +1,5 @@
+db.createCollection("staff") ;
+db.staff.insertOne({name:"jack", branch:"Cse", qualification:"B.Tech"}) ;
+db.staff.find() ;
+db.staff.updateOne({name:"jack"}, {$set:{Branch:"civil"}}) ;
+db.staff.deleteOne({name:"jack"}) ;
