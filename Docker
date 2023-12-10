@@ -1,0 +1,11 @@
+Demo.pyPrint ("Hello World")
+
+FROM python:latest 
+WORKDIR /usr/src/myapp 
+COPY Demo.py /usr/src/myapp 
+RUN python Demo.py 
+CMD ["python","./Demo.py"]
+
+Docker build -t image
+
+Docker run image
