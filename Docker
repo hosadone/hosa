@@ -1,4 +1,5 @@
 Demo.pyPrint ("Hello World")
+python Demo.py
 
 FROM python:latest 
 WORKDIR /usr/src/myapp 
